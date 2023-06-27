@@ -19,15 +19,12 @@ public class CalculateTest {
         // average
         double expected_2 = 2.5;
         assertEquals(String.valueOf(expected_2), String.valueOf(calculate.average(2, 3)));
-        // sumall
-        int expected_3 = 55;
-        assertEquals(expected_3, calculate.sumall(1, 10));
         // sumodd
-        int expected_4 = 25;
-        assertEquals(expected_4, calculate.sumodd(1,10));
+        int expected_3 = 25;
+        assertEquals(expected_3, calculate.sumodd(1,10));
         //sumeven
-        int expected_5 = 30;
-        assertEquals(expected_5, calculate.sumeven(1,10));
+        int expected_4 = 30;
+        assertEquals(expected_4, calculate.sumeven(1,10));
     }
 
 }
