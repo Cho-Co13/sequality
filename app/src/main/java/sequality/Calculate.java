@@ -5,8 +5,9 @@ public class Calculate {
         return x + y;
     }
 
-    public double average(double x, double y){
-        return x / y;
+    public double average(int x, int y){
+        int sum = sumall(x,y);
+        return (double)sum / (y-x+1);
     }
 
     public int sumall(int x, int y){

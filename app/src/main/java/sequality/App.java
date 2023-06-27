@@ -10,11 +10,28 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
-        System.out.print("Sum of 2 and 3 is " + new Calculate().sum(2, 3) + ". ");
-        System.out.println("Average is " + new Calculate().average(5, 2) + ". ");
-        System.out.print("sum of 1 to 10 is " + new Calculate().sumall(1, 10) + ". ");
-        System.out.println("Average is " + new Calculate().average(55, 10));
-        System.out.print("Sum of odd of 1 to 10 is " + new Calculate().sumodd(1,10) + ". ");
-        System.out.println("Sum of even is " + new Calculate().sumeven(1, 10) + ". ");
+        System.out.println(new App().getSum(2, 3) + new App().getAve(2,3));
+        System.out.println(new App().getSumall(1, 10) + new App().getAve(1,10));
+        System.out.println(new App().getSumodd(1, 10) + new App().getSumeven(1,10));
+    }
+
+    public String getSum(int x, int y){
+        return "Sum of " + x + " and " + y + " is " + new Calculate().sum(x,y) + ". ";
+    }
+
+    public String getAve(int x, int y){
+        return "Average is " + new Calculate().average(x,y) + ". ";
+    }
+
+    public String getSumall(int x, int y){
+        return "Sum of " + x + " to " + y + " is " + new Calculate().sumall(x,y) + ". ";
+    }
+    
+    public String getSumodd(int x, int y){
+        return "Sum of odd of " + x + " to " + y + " is " + new Calculate().sumodd(x,y) + ". ";
+    }
+
+    public String getSumeven(int x, int y){
+        return "Sum of even is " + new Calculate().sumeven(x,y) + ". "; 
     }
 }
