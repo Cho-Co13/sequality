@@ -24,7 +24,7 @@ public class App {
     }
 
     public String getSumall(int x, int y){
-        return "Sum of " + x + " to " + y + " is " + new Calculate().sum(x,y) + ". ";
+        return "Sum of " + x + " to " + y + " is " + new Calculate().sumall(x,y) + ". ";
     }
     
     public String getSumodd(int x, int y){

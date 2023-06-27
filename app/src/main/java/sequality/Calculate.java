@@ -1,11 +1,11 @@
 package sequality;
 
 public class Calculate {
-    // public int sum(int x, int y){
-    //     return x + y;
-    // }
-
     public int sum(int x, int y){
+        return x + y;
+    }
+
+    public int sumall(int x, int y){
         int count = 0;
         for(int i=x; i<=y; i++){
             count += i;
@@ -14,7 +14,7 @@ public class Calculate {
     }
 
     public double average(int x, int y){
-        int sum = sum(x,y);
+        int sum = sumall(x,y);
         return (double)sum / (y-x+1);
     }
 

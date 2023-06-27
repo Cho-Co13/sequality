@@ -15,7 +15,7 @@ public class CalculateTest {
         Calculate calculate = new Calculate();
         // sum
         int expected_1 = 5;
-        assertEquals(expected_1, calculate.sum(2,3));
+        assertEquals(expected_1, calculate.sumall(2,3));
         // average
         double expected_2 = 2.5;
         assertEquals(String.valueOf(expected_2), String.valueOf(calculate.average(2, 3)));
